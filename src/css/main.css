@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter';
+}
+
+body {
+  background-color: hsl(0, 0%, 0%);
+  height: 100vh;
+}
+.flex {
+  display: flex;
+}
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+header {
+  padding: 40px 4%
+}
+/* procura pelos elementos que tem a classe interface dentro do header */
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header a {
+  color: hsl(0, 0%, 59%);
+  text-decoration: none;
+  display: inline-block;
+}
+header a:hover {
+  color: hsl(0, 0%, 100%);
+  transform: scale(1.01);
+  transition: .2s;
+}
+header nav ul{
+  list-style-type: none;
+}
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px
+}
+.btn-contact button{
+  padding: 9px 38px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: hsl(266, 96%, 52%);
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn-contact button:hover{
+  box-shadow: 0px 0px 8px hsla(266, 96%, 52%, 0.492);
+  transition: .2s;
+  transform: scale(1.05);
+}
+
+
+
+section.site-top {
+  padding: 40px 4%;
+}
+section.site-top .flex{
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+.site-top h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 42px;
+  line-height: 40px;
+}
+.site-top .txt-site-top h1 span {
+  color: hsl(266, 96%, 52%);
+  font-size: 70px;
+}
+.site-top .txt-site-top p {
+  color: hsl(0, 0%, 100%);
+}
+.site-top .txt-site-top p {
+  color: hsl(0, 0%, 100%);
+  margin: 40px 0;
+}
+.site-top .img-site-top {
+  position: relative;
+  animation: float 2s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  0%{
+    top: 0;
+  }
+  100%{
+    top: 30px;
+  }
+}
