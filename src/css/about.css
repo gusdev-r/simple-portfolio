@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter';
+}
+
+body {
+  background-color: hsl(0, 0%, 0%);
+  height: 100vh;
+}
+.flex {
+  display: flex;
+}
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+header {
+  padding: 40px 4%
+}
+/* procura pelos elementos que tem a classe interface dentro do header */
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header a {
+  color: hsl(0, 0%, 59%);
+  text-decoration: none;
+  display: inline-block;
+}
+header a:hover {
+  color: hsl(0, 0%, 100%);
+  transform: scale(1.01);
+  transition: .2s;
+}
+header nav ul{
+  list-style-type: none;
+}
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px
+}
+.btn-contact button{
+  padding: 9px 38px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: hsl(266, 96%, 52%);
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn-contact button:hover{
+  box-shadow: 0px 0px 8px hsla(266, 96%, 52%, 0.492);
+  transition: .2s;
+  transform: scale(1.05);
+}
+
+#img-edit {
+  width: 400px;
+  border-radius: 18px;
+  box-shadow: 0px 0px 28px hsla(266, 96%, 52%, 0.119);
+}
+section.about {
+  padding: 40px 4%;
+}
+
+section.about .flex {
+  align-items: center;
+  gap: 6px;
+}
+.about .txt-about {
+  color: hsl(0, 0%, 100%);
+  padding-left: 44px;
+}
+.about .txt-about h2 {
+  font-size: 40px;
+  line-height: 44px;
+  margin-bottom: 10px;
+}
+.about .txt-about h2 span {
+  color: hsl(266, 96%, 52%);
+  display: block;
+}
+.about .txt-about p {
+  margin: 20px 0;
+  text-align: justify;
+}
+.btn-contact input{
+  padding: 9px 38px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: hsl(266, 96%, 52%);
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn-contact input:hover{
+  box-shadow: 0px 0px 8px hsla(266, 96%, 52%, 0.492);
+  transition: .2s;
+  transform: scale(1.05);
+}
+.btn-edit-social {
+  padding: 14px 18px;
+  font-size: 32px;
+  background-color: hsl(266, 96%, 52%);
+  border: 0;
+  border-radius: 34px;
+  cursor: pointer;
+}
+.btn-edit-social:hover {
+  box-shadow: 0px 0px 8px hsla(266, 96%, 52%, 0.492);
+  transition: .2s;
+  transform: scale(1.05);
+}

@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter';
+}
+
+body {
+  background-color: hsl(0, 0%, 0%);
+  height: 100vh;
+}
+.flex {
+  display: flex;
+}
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+header {
+  padding: 40px 4%
+}
+/* procura pelos elementos que tem a classe interface dentro do header */
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header a {
+  color: hsl(0, 0%, 59%);
+  text-decoration: none;
+  display: inline-block;
+}
+header a:hover {
+  color: hsl(0, 0%, 100%);
+  transform: scale(1.01);
+  transition: .2s;
+}
+header nav ul{
+  list-style-type: none;
+}
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px
+}
+.btn-contact button{
+  padding: 9px 38px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: hsl(266, 96%, 52%);
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn-contact button:hover{
+  box-shadow: 0px 0px 8px hsla(266, 96%, 52%, 0.492);
+  transition: .2s;
+  transform: scale(1.05);
+}
+.title {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 38px;
+}
+.title span {
+  color: hsl(266, 96%, 52%);
+}
+section.form {
+  padding: 80px 4%;
+}
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px
+}
+form input, form textarea{
+  width: 100%;
+  background-color: rgba(33, 33, 33, 0.829);
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+}
+form textarea {
+  resize: none;
+  max-height: 300px;
+}
+form .btn-send {
+  margin-top: 20px;
+  text-align: center;
+}
+form .btn-send input {
+  width: 120px;
+  background-color: hsl(266, 96%, 52%);
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-send input:hover{
+  box-shadow: 0px 0px 8px hsla(266, 96%, 52%, 0.492);
+  transition: .2s;
+  transform: scale(1.05);
+}

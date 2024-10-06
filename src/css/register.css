@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+  font-family: 'Inter';
+  color: hsl(0, 0%, 100%);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.registration-box {
+  display: flex;
+  /* align-items: center; */
+  background-color: hsl(0, 0%, 5%);
+  box-shadow: 0 0 18px hsla(0, 0%, 0%, 0.507);
+  border-radius: 28px;
+}
+.photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 560px;
+  height: 640px;
+  border-radius: 28px;
+  object-fit: cover;
+  /* box-shadow: 0 0 18px hsla(0, 0%, 100%, 0.035); */
+}
+.form-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: 30px; */
+  padding: 68px 68px;
+}
+.form-group {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-group label{
+  width: 80px;
+  margin-right: 10px;
+}
+h2 {
+  padding-bottom: 14px;
+  text-align: center;
+  font-size: 48px;
+}
+.title {
+  width: 320px;
+}
+
+input {
+  flex-wrap: wrap;
+  border-radius: 8px;
+  padding: 9px 9px;
+  outline: none;
+  border: none;
+  margin: 8px 8px;
+  font-family: 'Inter';
+  font-weight: 500;
+  background-color: hsl(0, 0%, 77%);
+}
+input::placeholder {
+  color: rgba(44, 44, 44, 0.726);
+  font-family: 'Inter';
+  font-weight: 500;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: hsl(266, 90%, 42%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+button:hover {
+  background-color: hsl(266, 45%, 42%);
+}
+.section-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Inter';
+  font-weight: 600;
+}
+#last-mes {
+  display: inline-block;
+  font-size: 10px;
+  border-bottom: 1px solid rgb(119, 119, 119);
+}
